@@ -5,12 +5,6 @@
 #pragma GCC diagnostic ignored "-Wbitwise-instead-of-logical"
 #endif
 
-bool AP_Arming_Copter::pre_arm_checks(bool display_failure)
-{
-    const bool passed = run_pre_arm_checks(display_failure);
-    set_pre_arm_check(passed);
-    return passed;
-}
 
 // perform pre-arm checks
 //  return true if the checks pass successfully
